@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Base de datos local (se genera con src/database/init.js)
+*.sqlite
+
+# Variables de entorno
+.env
