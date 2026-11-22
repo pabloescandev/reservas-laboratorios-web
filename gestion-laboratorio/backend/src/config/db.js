@@ -14,9 +14,14 @@ const dbPath = process.env.DB_PATH
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error("Error al conectar a SQLite:", err.message);
-  } else {
-    console.log("SQLite conectado en:", dbPath);
+    return;
   }
+  console.log("SQLite conectado en:", dbPath);
+  db.run("PRAGMA foreign_keys = ON", (pragmaErr) => {
+    if (pragmaErr) {
+      console.error("No se pudieron activar las llaves foráneas:", pragmaErr.message);
+    }
+  });
 });
 
 module.exports = db;
