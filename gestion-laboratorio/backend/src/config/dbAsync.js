@@ -1,7 +1,7 @@
 const db = require("../config/db");
 
 function get(sql, params = []) {
-    return new Promise((resolve, rehect) => {
+    return new Promise((resolve, reject) => {
         db.get(sql, params, (err, row) => {
             if (err) return reject(err);
             resolve(row);
