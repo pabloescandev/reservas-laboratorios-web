@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8376E0EA-1268-9BA2-06A3-62FA2668C077" name="LAB NOTIFICACIONES">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>B2EFF154-47F2-A558-89D2-7EB8A09BAAEA</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="not id" id="78A0B21F-BBF1-66BB-0447-99A6117248B1">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>ADD18CB8-53F1-BE6E-7945-F60E36AD503F</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="not tipo" id="513C43A4-190B-E689-9AB1-81C424002B8D">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>9E562781-00B6-9420-7435-301FB17945DA</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75DF8B5D-601A-131D-F315-AB57EE6F0F7D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="not mensaje" id="C7EF798D-C66E-33EB-1EB6-18B099E0D160">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>D6046700-0030-DDD9-509E-5536DB52A1C6</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CED7CAB6-5984-2A9F-9B8D-F63941E18FE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="not leida" id="30CACFCE-E9D4-85FB-9BAA-6EAE9D836185">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>0A202263-FD1B-50E8-AB19-4BEC6934A8F7</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CE83E3E-FBC7-DDCE-0B82-0D2AB44F229C</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="not fecha creacion" id="D06B0DCF-4E23-71D7-AA76-56B5B7D8AB75">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>92140B4B-AD15-F4F2-AD01-C2B6FC844872</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>30FC7B53-71ED-4401-057C-B3711103899D</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu id" id="36AF18AD-65D0-ED6A-FAB6-FEFCE316AEDF">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>2067E743-83DB-8504-5AAA-ED97B811BAE3</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<referedAttribute>7A35CC9D-53D5-662C-3C5D-E1DDD02735F9</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="res id" id="8BEA277C-06DD-E49E-6190-9962439E8A0D">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>2123019E-AA3E-4B72-2721-6904CC904959</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5E2A9CD8-CB9C-F257-499B-019D7E157DFE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inc id" id="4B3BA1B4-A773-5699-51C6-0B03FDCD3987">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>F76BBB66-7807-4478-B4A8-B1C4D9BB50C7</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E08A7372-F5A5-1DAC-14A9-1791869CBA5F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DB0E087E-4B38-CCA5-097B-B35326302CCC" name="PK LAB NOTIFICACIONES">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>B043D657-C8D6-0474-B159-0CF4B0CA2B87</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78A0B21F-BBF1-66BB-0447-99A6117248B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

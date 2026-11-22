@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A8F6925-0B37-614F-142B-E1EFB21587E2" containerWithKeyObject="FE9E95C3-1104-BC85-0BB1-5EDE1B48AAE1" localFKIndex="1DE00CBF-983C-F283-49DB-FD1E6CF1B56E" name="FK_RESERVAS_HORARIO">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>225600BF-4CD5-D6DD-94E2-36C961319283</importedID>
+<referredTableLongName>LAB_HORARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C92E3C1C-E35D-5DCB-51CD-9740F91C3EFF</referredTableID>
+<keyObject>AC258CA0-0233-EDC9-37EF-6371508C7DD4</keyObject>
+<referredKeyID>AC258CA0-0233-EDC9-37EF-6371508C7DD4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>hor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

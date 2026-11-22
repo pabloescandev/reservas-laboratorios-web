@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LAB_BLOQUEOS" directorySegmentName="seg_0" id="31718008-C79C-7531-D201-C5B685B33587">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="blo_hora_fin" id="195ADCDC-3502-47B7-DE55-2057B239A08E">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_hora_inicio" id="3234C3A1-690E-834C-1742-1B50528DAB6D">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_tipo" id="4DF415C8-437B-103E-C1B3-BEE52056B96B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_fecha_fin" id="67CA5A9F-110C-A032-4E9E-08AA0482F2D7">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_motivo" id="AA41C208-0E81-2C8A-7BC7-1311981E0FE6">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_id" id="B5371166-AE7D-9777-4957-C90B1BA71E2B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_fecha_inicio" id="CC6B54F0-67CC-8E5E-AF81-A90A2DEC2B6A">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="blo_dia_semana" id="D217DFCD-0B22-9D82-3635-9B1E93FFAB9B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="lab_id" id="D8137D49-C8A6-19B1-9727-5FD33286BFBF">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_BLOQUEOS_LABORATORIO" id="F080BCCF-9130-8EC0-E237-B25B89E5EC1D">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LAB_BLOQUEOS" id="E54EA8FA-6E40-F740-D8B0-2ABD5B54B097">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_BLOQUEO_HORAS" id="1E348F62-5B0E-ABDD-81FB-4A60BDFCBD14">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_BLOQUEO_DIA" id="3569FC9D-5932-3D6C-E708-FE22F212E077">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_BLOQUEO_TIPO" id="B741EBFD-D074-374A-3F16-94FCC4CA8DDB">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_BLOQUEO_FECHAS" id="DCE82EE8-9C58-34B2-A872-9739D569C805">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

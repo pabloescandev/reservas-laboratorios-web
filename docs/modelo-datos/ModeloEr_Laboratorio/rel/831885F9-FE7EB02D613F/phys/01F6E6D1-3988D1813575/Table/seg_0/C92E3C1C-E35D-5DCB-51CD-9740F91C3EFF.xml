@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LAB_HORARIOS" directorySegmentName="seg_0" id="C92E3C1C-E35D-5DCB-51CD-9740F91C3EFF">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="hor_id" id="5B914D0C-B071-845D-F9C2-7D088D4A9B6B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hor_entrada" id="78891ABC-46E2-FED4-1454-319A25587E81">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hor_dia_semana" id="8E3A967D-9633-92F2-6A1D-0380C54B9625">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="lab_id" id="96E9CC44-878A-FAE9-B69F-B2F78E68018B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="hor_salida" id="D06CFC6E-8AAB-E6C1-4B84-7C5FF084ADC6">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_HORARIOS_LABORATORIO" id="F39C9A81-1A3E-1ECD-C09F-40FB2702BDC7">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LAB_HORARIOS" id="AC258CA0-0233-EDC9-37EF-6371508C7DD4">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_HORARIO_RANGO" id="72E80AAE-5FD4-1178-99A8-399E5FE88CF3">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_HORARIO_DIA" id="EA272638-88DC-135D-CA86-8A193527ABA6">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev20c>

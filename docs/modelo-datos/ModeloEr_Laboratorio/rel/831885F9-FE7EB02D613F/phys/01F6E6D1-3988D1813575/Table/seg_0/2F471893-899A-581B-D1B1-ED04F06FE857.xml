@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LAB_USUARIO" directorySegmentName="seg_0" id="2F471893-899A-581B-D1B1-ED04F06FE857">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="usu_id" id="0AEBC22B-C34D-6D73-399D-4609286C9A69">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usu_contrasenia_hash" id="3E725D53-D45A-E03E-0513-C03B45E313EE">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usu_fecha_creacion" id="41A29BC9-2AED-EC30-C64B-BCF6B11078AD">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="usu_estado" id="5EA717FE-D0E5-894D-A296-59F9FF069266">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="usu_nombres" id="8F582744-A57B-48CC-831C-22599B1C3FA2">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usu_apellidos" id="96CA12BB-82BF-0BB0-FAA2-BDC27CA63666">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usu_correo" id="E143D348-3C9F-93B2-EB9D-C7DF2898E282">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="usu_rol" id="E3C21608-3B7A-2FC7-AB1A-9754034286BD">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LAB_USUARIO" id="858937C9-CD6E-5008-E3D5-753876B79D8D">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_USUARIO_ROL" id="1BA14397-E93F-6B1C-9E5A-42FF6F41050A">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="CK_USUARIO_ESTADO" id="777E7AC9-5277-ED95-DFE3-63B587177137">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UQ_USUARIO_CORREO" id="9B4D02BD-DB76-1B82-B519-A7A564D6F6B8">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

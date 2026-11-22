@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9AA8B933-2750-D0ED-A18C-128E2D47096C" containerWithKeyObject="B7461BB0-F827-3876-1A34-E709459BFC06" localFKIndex="3B963073-9C2D-04E1-A415-FB469591ED3C" name="FK_INCIDENCIAS_USUARIO">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>007CDF6A-AE6C-9E8D-5A28-D696D089EA2B</importedID>
+<referredTableLongName>LAB_USUARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F471893-899A-581B-D1B1-ED04F06FE857</referredTableID>
+<keyObject>858937C9-CD6E-5008-E3D5-753876B79D8D</keyObject>
+<referredKeyID>858937C9-CD6E-5008-E3D5-753876B79D8D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>usu_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

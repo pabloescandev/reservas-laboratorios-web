@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_EQUIPOS_LABORATORIO" directorySegmentName="seg_0" id="B5D1C7F0-6B9E-C092-CADD-3238CA053EAF">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>FEE56715-7DED-ADC5-2161-DD0E590AC76B</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<sourcePk>18105CF3-7F94-8838-23E8-A067CFE4B479</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>946AB56E-D0A8-331C-B204-CC4CA14A1498</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F610A13D-EC8D-B21C-D235-C2DD6F7F56D6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E85B8F0B-27C0-B75E-7030-F3444E6609C2" name="LAB_EQUIPOS">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>9E789681-0E83-981C-9DD4-BB0825616D97</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="equ_id" id="3BD37B5C-BE60-1E47-07B4-0FB1248BEC1D">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>BEE5F6AF-DA13-9370-7050-CAF850F76209</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="equ_codigo" id="4C3DBD13-3A5E-AA0B-345F-89D89FDF1415">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>E01DD96F-9511-F822-1FA7-857D8CE2C2B5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DDBC998F-29BA-C2F1-61AD-7D16E2B28F2B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="equ_tipo" id="23EC2939-D03E-94E1-5497-18A0FEA27921">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>FE2C8E30-355F-1EEC-B35F-0C72873140DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9A978F57-092F-04FD-EC6F-7AED39EE75B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="equ_estado" id="BEAB15C9-8FCF-2106-CAD7-262945568186">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>B40C60DF-70F1-924E-F574-E002E79FD48B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75DF8B5D-601A-131D-F315-AB57EE6F0F7D</domain>
+<defaultValue>&apos;O&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_id" id="8960516D-6C1D-9B69-6537-329FA24175A4">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>B2C32EA6-FB0F-CC3F-A9ED-52142D7944FD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEE56715-7DED-ADC5-2161-DD0E590AC76B" referredColumn="25BD2005-3508-D88B-6B83-72CBC4715285"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0480B5C2-AC6A-75A4-E46E-B5415FB52C60" name="PK_LAB_EQUIPOS">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>74BF38DD-0C2B-A078-E177-B6D63501960A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BD37B5C-BE60-1E47-07B4-0FB1248BEC1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFF044DA-F3C3-BD9B-6729-2A3D5FBF76B0" name="UQ_EQUIPO_CODIGO">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>27D82452-29F5-22E4-6F9C-EAF7A1E101E4</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C3DBD13-3A5E-AA0B-345F-89D89FDF1415"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A24CAD4-9300-6D81-2195-D420DB16F0C0" name="FK_EQUIPOS_LABORATORIO">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8960516D-6C1D-9B69-6537-329FA24175A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_EQUIPO_ESTADO" directorySegmentName="seg_0" id="524C9E7E-3AD1-CD83-8CBD-C7D215EE7822">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>DA893FB2-0144-2EC7-1A5A-F2627F02C7DD</importedID>
+<rule><![CDATA[equ_estado IN ('O', 'D', 'R')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

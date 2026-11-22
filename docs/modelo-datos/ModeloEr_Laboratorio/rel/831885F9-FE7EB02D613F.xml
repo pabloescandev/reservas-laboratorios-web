@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="modelo_oracle_import" id="831885F9-6403-A4E7-100E-FE7EB02D613F" mainViewID="363B17E4-291D-CCB0-7BF9-BD1B1E49BDBA">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:07:20 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>modelo_oracle_import.sql</fileName>
+<pathName>C:\Users\USUARIO\Documents\Archivos de clase\Programacion y Plataformas Web</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloEr_Laboratorio" id="4D348308-67E9-BFF2-3959-EF76F99B35C1" version="3.5">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:05:30 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4D348308-67E9-BFF2-3959-EF76F99B35C1</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3FEACEC4-41E3-3B0C-BB82-9F634C643ABF">
+<designStoragePath>C:\modelo_oracle_import</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

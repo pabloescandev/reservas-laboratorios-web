@@ -1,0 +1,287 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE9E95C3-1104-BC85-0BB1-5EDE1B48AAE1" name="LAB_RESERVAS">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>0BE02949-F2BD-6BD0-E23A-B9AEB7245C7B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="res_id" id="2ED882A6-6643-79EC-7416-258528B7D1D3">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>28628571-DA2B-E081-BDE5-371C7BDD2B44</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_tipo" id="1ACB6098-8B9F-9F8A-DB92-574795006AF8">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>775EB7AC-5CF1-9AB6-64B5-C6321E31C682</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75DF8B5D-601A-131D-F315-AB57EE6F0F7D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_fecha" id="8BDD0034-8847-B823-4142-1D5EE1B7402D">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>5EE2E589-3CA0-7A72-78EE-5DD95ACDCB2F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>30FC7B53-71ED-4401-057C-B3711103899D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_aforo" id="9EE85DBF-402A-8709-F9F2-94B62692A8D7">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>C066A825-0FEF-A81C-A988-ADDD2E3258EC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>21F2FEB5-6912-3ECC-CA5C-262A33D5C409</domain>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_asignatura" id="BEABE94F-2FF9-2E1F-526C-CE27DBC7DE34">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>439AAC4C-8D6E-92AF-67E0-ADC10D7206DC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>9A978F57-092F-04FD-EC6F-7AED39EE75B1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_motivo" id="12B4C3C6-7605-3909-EA0B-5BEE0B7B3EC0">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>64C347E0-646B-557C-2B8C-C84A39B02653</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CED7CAB6-5984-2A9F-9B8D-F63941E18FE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_estado" id="42144EA4-496C-4135-5639-520315963C36">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>A64F300D-C1CE-0CB7-9DD5-F13A8ADF332B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75DF8B5D-601A-131D-F315-AB57EE6F0F7D</domain>
+<defaultValue>&apos;P&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_mensaje_respuesta" id="7D1DA7F4-46AE-BFDB-AE3F-19DE546F1506">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>44B851BF-B48F-13F2-A327-8A6EE2DA7EEF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CED7CAB6-5984-2A9F-9B8D-F63941E18FE2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="res_fecha_creacion" id="99544D3B-9D3A-D963-BDE8-EB485CC85B1D">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>2CB101F3-E732-953F-64FD-8F988667C1AD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>30FC7B53-71ED-4401-057C-B3711103899D</domain>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usu_id" id="7C067FB3-006D-7249-0B85-48FE42A11D7C">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>2056DB05-B8CC-EED7-9F12-874F4BD2E702</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="210391BF-A297-E14A-26A8-E83D4905B1C0" referredColumn="0AEBC22B-C34D-6D73-399D-4609286C9A69"/>
+</associations>
+</Column>
+<Column name="hor_id" id="B6335136-7084-F953-D35A-58A0335E6257">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>33D6CE2C-A82C-A3D8-A2C8-6B0D54DB3513</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A8F6925-0B37-614F-142B-E1EFB21587E2" referredColumn="5B914D0C-B071-845D-F9C2-7D088D4A9B6B"/>
+</associations>
+</Column>
+<Column name="equ_id" id="AC55E968-764E-6BB7-8E23-60825FAA042D">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>0D96D824-97CA-88CB-DCDE-285C1988054F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D63BB2B5-8961-1996-4A42-BFBB314B79CE" referredColumn="3BD37B5C-BE60-1E47-07B4-0FB1248BEC1D"/>
+</associations>
+</Column>
+<Column name="usu_id_revisor" id="8DA1D5FD-89A5-95CF-836C-CC031F5142DD">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>D897D07E-CB40-7D1C-1441-E35E83C4D3C0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C5A0D706-FEE5-B657-90A3-3BDA6E9AB583" referredColumn="0AEBC22B-C34D-6D73-399D-4609286C9A69"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27D635AC-7941-0101-BB7E-D921D393653D" name="PK_LAB_RESERVAS">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>88882BCC-ABE0-7644-96B7-42D641670A71</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2ED882A6-6643-79EC-7416-258528B7D1D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30C0E5BF-89D2-A615-B6A8-C8B020B35A65" name="FK_RESERVAS_EQUIPO">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC55E968-764E-6BB7-8E23-60825FAA042D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DE00CBF-983C-F283-49DB-FD1E6CF1B56E" name="FK_RESERVAS_HORARIO">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6335136-7084-F953-D35A-58A0335E6257"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A655BB2F-C13D-0B53-6990-D652B57F46CA" name="FK_RESERVAS_REVISOR">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DA1D5FD-89A5-95CF-836C-CC031F5142DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EB31A70-F6DA-B8ED-9789-99ACEA6DA5FC" name="FK_RESERVAS_USUARIO">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C067FB3-006D-7249-0B85-48FE42A11D7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_RESERVA_TIPO" directorySegmentName="seg_0" id="67E8A579-CE28-E7B6-0634-C6563EFE8815">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>A1B36B83-E94E-D8E3-1C26-25DFD806365F</importedID>
+<rule><![CDATA[res_tipo IN ('L', 'P', 'E')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_RESERVA_AFORO" directorySegmentName="seg_0" id="23DDABF1-6659-0F85-9C19-9EEE78FD555B">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>3CE37734-EBE2-3DF0-BC50-86B76F15957C</importedID>
+<rule><![CDATA[res_aforo > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_RESERVA_ESTADO" directorySegmentName="seg_0" id="9E0FA498-8DE1-C9BC-B4D0-393E33F37BE7">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>85CEB683-FCA9-1D95-EC1C-67D98E7A04C3</importedID>
+<rule><![CDATA[res_estado IN ('P', 'A', 'R', 'C', 'F')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_RESERVA_EQUIPO" directorySegmentName="seg_0" id="A80694D4-6363-4E80-2417-845C4D59D2DC">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>EDBCE271-BFA3-1FD7-E116-93594F28AD86</importedID>
+<rule><![CDATA[(res_tipo = 'E' AND equ_id IS NOT NULL) OR (res_tipo <> 'E' AND equ_id IS NULL)]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_RESERVA_ASIGNATURA" directorySegmentName="seg_0" id="F58CCD48-2AD8-A270-8DED-27BEB69A5A00">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>E5DF7AC9-C517-A5C9-F2D6-2E9C07408842</importedID>
+<rule><![CDATA[res_tipo <> 'L' OR res_asignatura IS NOT NULL]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

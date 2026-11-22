@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F769A74F-8666-5B46-0C1E-6351A23B64C1" containerWithKeyObject="B2EFF154-47F2-A558-89D2-7EB8A09BAAEA" localFKIndex="4188500B-7590-86C6-DCF0-4F19D8067AC3" name="FK_NOTIFICACIONES_RESERVA">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>67483E12-32C8-70B6-694E-B124A00592C5</importedID>
+<referredTableLongName>LAB_RESERVAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE9E95C3-1104-BC85-0BB1-5EDE1B48AAE1</referredTableID>
+<keyObject>27D635AC-7941-0101-BB7E-D921D393653D</keyObject>
+<referredKeyID>27D635AC-7941-0101-BB7E-D921D393653D</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>res_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

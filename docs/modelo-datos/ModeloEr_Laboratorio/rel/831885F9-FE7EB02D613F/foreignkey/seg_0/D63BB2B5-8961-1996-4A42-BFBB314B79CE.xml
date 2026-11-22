@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D63BB2B5-8961-1996-4A42-BFBB314B79CE" containerWithKeyObject="FE9E95C3-1104-BC85-0BB1-5EDE1B48AAE1" localFKIndex="30C0E5BF-89D2-A615-B6A8-C8B020B35A65" name="FK_RESERVAS_EQUIPO">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>EA57C284-3656-FA28-FB39-5D7F8CFB9769</importedID>
+<referredTableLongName>LAB_EQUIPOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E85B8F0B-27C0-B75E-7030-F3444E6609C2</referredTableID>
+<keyObject>0480B5C2-AC6A-75A4-E46E-B5415FB52C60</keyObject>
+<referredKeyID>0480B5C2-AC6A-75A4-E46E-B5415FB52C60</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>equ_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="39EE6F97-58FC-43D9-3D06-FCC87FE866E7" name="LAB HORARIOS">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>C92E3C1C-E35D-5DCB-51CD-9740F91C3EFF</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hor id" id="5812A0DF-5E77-9C7B-D7E8-5D92B832A094">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>5B914D0C-B071-845D-F9C2-7D088D4A9B6B</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor dia semana" id="C85147FA-1547-8A4F-E1AB-5F5A70B05E98">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>8E3A967D-9633-92F2-6A1D-0380C54B9625</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CE83E3E-FBC7-DDCE-0B82-0D2AB44F229C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor entrada" id="2E11DC2C-5FDC-970C-F68D-2EA8CE048846">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>78891ABC-46E2-FED4-1454-319A25587E81</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0568B5B9-3A03-E283-8370-9A8931EC5795</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor salida" id="3C1D22F2-2879-F106-2556-5E082CE6B359">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>D06CFC6E-8AAB-E6C1-4B84-7C5FF084ADC6</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0568B5B9-3A03-E283-8370-9A8931EC5795</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab id" id="0D364165-0FEB-1DF3-236E-5C5944457618">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>499FA116-D5EC-0608-D38C-928D4D68DD66</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<referedAttribute>93E3C974-6EA8-63D8-C92A-CF47C59AD4B2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A869ECC-EADD-9EB8-C782-28876C1B2289" name="PK LAB HORARIOS">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>AC258CA0-0233-EDC9-37EF-6371508C7DD4</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5812A0DF-5E77-9C7B-D7E8-5D92B832A094</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

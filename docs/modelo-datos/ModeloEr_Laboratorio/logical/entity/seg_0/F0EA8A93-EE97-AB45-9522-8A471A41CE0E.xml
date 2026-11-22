@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0EA8A93-EE97-AB45-9522-8A471A41CE0E" name="LAB BLOQUEOS">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>31718008-C79C-7531-D201-C5B685B33587</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="blo id" id="FF3DA0A4-E24F-654A-B557-EB87BE587A4B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>B5371166-AE7D-9777-4957-C90B1BA71E2B</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo tipo" id="EFAA3297-8260-7CDB-3B26-4F390346A557">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>4DF415C8-437B-103E-C1B3-BEE52056B96B</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75DF8B5D-601A-131D-F315-AB57EE6F0F7D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo motivo" id="8440DB5F-645A-375B-3261-199A2F2FB52B">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>AA41C208-0E81-2C8A-7BC7-1311981E0FE6</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>3065232A-2EC0-E655-F08F-EB1C726ED7EB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo fecha inicio" id="E648C8C6-353D-DA48-CB11-225B4C0A7738">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>CC6B54F0-67CC-8E5E-AF81-A90A2DEC2B6A</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>30FC7B53-71ED-4401-057C-B3711103899D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo fecha fin" id="CDFB99BA-1A78-26D5-EA34-6E3A4F955CF5">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>67CA5A9F-110C-A032-4E9E-08AA0482F2D7</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>30FC7B53-71ED-4401-057C-B3711103899D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo dia semana" id="E94646D3-EC2F-79B1-47D8-90B970300BB1">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>D217DFCD-0B22-9D82-3635-9B1E93FFAB9B</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9CE83E3E-FBC7-DDCE-0B82-0D2AB44F229C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo hora inicio" id="B92FC9DA-5A52-DA2C-8C9F-37AFB9D001D2">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>3234C3A1-690E-834C-1742-1B50528DAB6D</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0568B5B9-3A03-E283-8370-9A8931EC5795</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="blo hora fin" id="5E931E13-A147-80EE-CFD2-39648CC59B66">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>195ADCDC-3502-47B7-DE55-2057B239A08E</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0568B5B9-3A03-E283-8370-9A8931EC5795</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab id" id="ADAF19E0-E710-BF5E-6441-4E73AE8722C1">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>8CF3BD54-33D3-44C1-AD84-07895A37D692</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>93E3C974-6EA8-63D8-C92A-CF47C59AD4B2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>1E4683A1-5A97-2382-1FBC-9DC2380720C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6424CF2C-26DA-913A-0FD0-DF2CB293F642" name="PK LAB BLOQUEOS">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>E54EA8FA-6E40-F740-D8B0-2ABD5B54B097</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FF3DA0A4-E24F-654A-B557-EB87BE587A4B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

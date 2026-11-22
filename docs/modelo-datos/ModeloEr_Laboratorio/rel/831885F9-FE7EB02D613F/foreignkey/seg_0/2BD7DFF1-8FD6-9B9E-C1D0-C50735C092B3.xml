@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2BD7DFF1-8FD6-9B9E-C1D0-C50735C092B3" containerWithKeyObject="C92E3C1C-E35D-5DCB-51CD-9740F91C3EFF" localFKIndex="F39C9A81-1A3E-1ECD-C09F-40FB2702BDC7" name="FK_HORARIOS_LABORATORIO">
+<sourceDDLFile>modelo_oracle_import.sql</sourceDDLFile>
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:10:47 UTC</createdTime>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<importedID>5A949781-C648-B961-8469-A6A0044A7A76</importedID>
+<referredTableLongName>LAB_LABORATORIOS</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>5B605CC5-11ED-409A-81F8-ABD07EA6DD73</referredTableID>
+<keyObject>58746A6A-A554-3C84-01BC-ABF3EC338DE1</keyObject>
+<referredKeyID>58746A6A-A554-3C84-01BC-ABF3EC338DE1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>lab_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

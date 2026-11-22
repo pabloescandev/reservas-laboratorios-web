@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_NOTIFICACIONES_INCIDENCIA" directorySegmentName="seg_0" id="F76BBB66-7807-4478-B4A8-B1C4D9BB50C7">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>02062696-1C79-8B19-E938-32A6DF1A3065</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<sourcePk>50C1800B-E14B-6225-C0A4-C3604DB2C3EE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EB8875C0-CB99-87BF-D48C-79F30E8A246B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8376E0EA-1268-9BA2-06A3-62FA2668C077</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

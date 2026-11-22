@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_INCIDENCIAS_USUARIO" directorySegmentName="seg_0" id="3DF7720D-C705-FAF8-2BB4-249F29185824">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>9AA8B933-2750-D0ED-A18C-128E2D47096C</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<sourcePk>A5D527EA-76C9-873B-19FA-B7098D0F272C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0D7383FF-BA66-202B-BFF3-3A53993BB61E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EB8875C0-CB99-87BF-D48C-79F30E8A246B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

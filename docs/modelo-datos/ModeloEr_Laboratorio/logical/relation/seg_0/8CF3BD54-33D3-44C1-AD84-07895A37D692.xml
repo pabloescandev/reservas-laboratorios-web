@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_BLOQUEOS_LABORATORIO" directorySegmentName="seg_0" id="8CF3BD54-33D3-44C1-AD84-07895A37D692">
+<createdBy>Mateo Namicela</createdBy>
+<createdTime>2026-11-22 05:13:00 UTC</createdTime>
+<generatorID>FED172FC-4222-9E18-BBA7-AA904209DF2A</generatorID>
+<ownerDesignName>ModeloEr_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="831885F9-6403-A4E7-100E-FE7EB02D613F" value="true"/>
+<item key="5F673D1D-DDA2-729C-B88E-FB665B057D91" value="true"/>
+</engineerTo>
+<sourcePk>18105CF3-7F94-8838-23E8-A067CFE4B479</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>946AB56E-D0A8-331C-B204-CC4CA14A1498</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F0EA8A93-EE97-AB45-9522-8A471A41CE0E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>
