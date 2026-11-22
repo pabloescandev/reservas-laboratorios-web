@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModeloRelacional_Laboratorio" id="80E202EC-863F-FDAA-0431-B2EAA6601404" version="3.5">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 16:57:29 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>80E202EC-863F-FDAA-0431-B2EAA6601404</designId>
+</OSDM_Design>

@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFE68CDF-B4BA-0EB4-4957-D03C618CF183" name="LAB_HORARIOS">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:48:23 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hor_id" id="22A320C5-E220-1ADE-5B0C-1C4AA0A8D43C">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:48:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo indetificador por franja horaria.]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor_dia_semana" id="7936E8D2-16BA-143E-22E8-F8D2DCBABEB9">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:47:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica un dia con el valor de 1 a 7 o 'LUN', 'MAR', para saber qué días aplica esa franja en el calendario semanal]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor_entrada" id="6302CD99-94C6-02A9-5D37-C3FEF0DAFE28">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:49:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Horario de entrada disponilbe por franja horaria]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor_salida" id="F90AF711-8419-4187-2691-8A76FB6FE00A">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:49:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Horario de salida  por franja horaria]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor_bloqueo" id="46B39F30-CA1F-72A6-2FC1-09C9F1EEE21D">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:50:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado actual del laboratorio: "C" Clase Fija, "M" Mantenimiento, "F" Feriados y null (El laboratorio esta sin ningun bloqueo)]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hor_fecha_bloqueo" id="E5CEA5DF-E4C9-ECBE-FA0D-D1528F37186F">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:48:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha del bloqueo ya sea  "C" Clase Fija, "M" Mantenimiento p "F" Feriadp]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_id" id="CFC28373-DEBC-973E-2D61-6AA7F6AA24D7">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 17:02:05 UTC</createdTime>
+<generatorID>8368C9D8-C294-5862-2009-6D61228F7695</generatorID>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<referedAttribute>9254F437-1E90-CEF2-0426-CE0E6AA305F0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7DFE642D-3377-E390-6B7D-D5C650AA2F85" name="LAB_HORARIOS PK">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 15:48:48 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22A320C5-E220-1ADE-5B0C-1C4AA0A8D43C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

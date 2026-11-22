@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C078505-5E95-611B-0ADA-8CA39165B083" name="LAB_USUARIO">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 16:58:27 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="usu_id" id="5DA4AD48-6179-4E03-224F-FCBD491BAD86">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:16:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico por usuario.]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_usuario" id="28CC2939-BAE5-B3C8-F1E7-1A4DD202CF6B">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:25:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuario del perfil creado.]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_contrasenia_hash" id="95810884-1917-0B27-E84C-6129B0BA24A2">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:38:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Password almacenada con HASH.]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_rol" id="85CFF78C-3BE2-5D15-370E-E8509C3F76F1">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:45:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rol asignado al usuario: "A" Administrador, "D" Docente, "E" Estudiante]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_nombres" id="1B31FFE1-0791-8851-62E0-6AF41784AAA9">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:42:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primer y segundo nombre del usuario (el segundo nombre es opcional)]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_apellidos" id="436F2B57-558D-7364-8615-4C845BA35494">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:44:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primer y segundo apellido del usuario (el segundo apellido es opcional)]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_estado" id="32C39AFF-318B-BCD3-757D-F0590235CCB3">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:47:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del usuario: "T" true (activo) y "F" false (inactivo).]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_fecha_creacion" id="74D20537-C140-1658-9315-015865558D96">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 00:19:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tiempo de creacion del usuario.]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4D7D125-BCFA-5FDD-14B4-7DF05E46725F" name="LAB_USUARIO PK">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-19 17:41:58 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5DA4AD48-6179-4E03-224F-FCBD491BAD86</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

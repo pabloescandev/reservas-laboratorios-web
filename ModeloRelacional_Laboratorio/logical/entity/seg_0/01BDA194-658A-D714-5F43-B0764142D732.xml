@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01BDA194-658A-D714-5F43-B0764142D732" name="LAB_INCIDENCIAS">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:04:54 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="inc_id" id="400C6DFD-C7E9-74F2-0451-20F64CC87219">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:05:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico por incidencias]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inc_descripcion" id="24E84667-E0C4-77A9-783E-D518DFF0B7C0">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:05:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descricion de la incidencia, problema o mal estar]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inc_prioridad" id="0EDE13E5-1B40-3347-5ED6-53CF8A9DF344">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:06:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Prioridad de incidencia valor del (0-9) siendo 9 el valor mas alto en la escala de prioridad]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inc_estado" id="B78194A1-007D-ACBE-FD18-01DD409DC4AB">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:06:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la incidencia "P" pendiente, "E" En revion o "R" resueñta]]></commentInRDBMS>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="equ_id" id="46E9DDAC-455C-DFD8-85F6-A9B440073E68">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 17:03:19 UTC</createdTime>
+<generatorID>24021BB1-5B85-28BC-E92E-CEF8BA9DFE09</generatorID>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<referedAttribute>3AF635D5-E2CA-AE96-CF61-CA29F6125375</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="usu_id" id="40046AF1-529D-87A2-7EFF-8FE2F247FE43">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 17:03:38 UTC</createdTime>
+<generatorID>2024B2D6-9733-C764-92BA-82F132F4DB00</generatorID>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<referedAttribute>5DA4AD48-6179-4E03-224F-FCBD491BAD86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A4FCCBB-F2D5-7A4B-0974-FB4956073B4F" name="LAB_INCIDENCIAS PK">
+<createdBy>escan</createdBy>
+<createdTime>2026-11-20 16:05:29 UTC</createdTime>
+<ownerDesignName>ModeloRelacional_Laboratorio</ownerDesignName>
+<engineerTo>
+<item key="E296B5FE-7938-9BC3-4535-CB3B2441781F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>400C6DFD-C7E9-74F2-0451-20F64CC87219</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
