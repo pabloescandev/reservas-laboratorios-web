@@ -1,4 +1,4 @@
-const { get, all, run } = require("../database/dbAsync");
+const { get, all, run } = require("../config/dbAsync");
 
 async function findByCorreo(correo) {
     const correoNormalizado = String(correo || "").trim().toLowerCase();
