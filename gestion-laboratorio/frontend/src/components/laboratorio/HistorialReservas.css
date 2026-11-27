@@ -1,0 +1,157 @@
+.tarjeta-historial-reservas {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  min-width: 0;
+}
+
+.cabecera-historial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.titulo-historial {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filtro-historial {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.filtro-historial select {
+  min-height: 38px;
+  padding: 0 10px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contenedor-tabla-historial {
+  overflow-x: auto;
+}
+
+.tabla-historial {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tabla-historial thead {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabla-historial th {
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.tabla-historial td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.insignia-estado {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.insignia-estado-P {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.insignia-estado-A {
+  background-color: #dcfce7;
+  color: #14532d;
+}
+
+.insignia-estado-R {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+}
+
+.insignia-estado-C {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.insignia-estado-F {
+  background-color: #e0f2fe;
+  color: #075985;
+}
+
+.boton-cancelar-historial {
+  min-height: 32px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.boton-cancelar-historial:hover {
+  background-color: #fef2f2;
+}
+
+.vacio-historial {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.mensaje-historial {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mensaje-historial-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.mensaje-historial-exito {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+@media (min-width: 768px) {
+  .tarjeta-historial-reservas {
+    padding: 20px;
+  }
+}

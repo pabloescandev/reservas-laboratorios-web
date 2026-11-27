@@ -3,6 +3,7 @@ import { MainLayout } from '../components/layout/MainLayout';
 import { CalendarioSemanal } from '../components/laboratorio/CalendarioSemanal';
 import { PanelLaboratorio } from '../components/laboratorio/PanelLaboratorio';
 import { DialogoFranja } from '../components/laboratorio/DialogoFranja';
+import { HistorialReservas } from '../components/laboratorio/HistorialReservas';
 import { obtenerDisponibilidad } from '../services/reservaService';
 import { listarEquiposDeLaboratorio, obtenerLaboratorio } from '../services/laboratorioService';
 import { NOMBRES_ROL, obtenerUsuarioActual } from '../services/sesion';
@@ -19,6 +20,7 @@ export function LaboratorioDetallePage({ labId, onReportarDano }) {
     const [disponibilidad, setDisponibilidad] = useState(null);
     const [seleccion, setSeleccion] = useState(null);
     const [error, setError] = useState('');
+    const [versionHistorial, setVersionHistorial] = useState(0);
 
     useEffect(() => {
         obtenerLaboratorio(labId)
@@ -71,6 +73,14 @@ export function LaboratorioDetallePage({ labId, onReportarDano }) {
                     ) : (
                         !error && <p className="texto-cargando">Cargando calendario…</p>
                     )}
+
+                    <HistorialReservas
+                        titulo={rol === 'A' ? 'Reservas del laboratorio' : 'Mis reservas en este laboratorio'}
+                        labId={labId}
+                        rol={rol}
+                        version={versionHistorial}
+                        onCambio={cargarDisponibilidad}
+                    />
                 </div>
 
                 <div className="columna-panel">
@@ -93,7 +103,10 @@ export function LaboratorioDetallePage({ labId, onReportarDano }) {
                     equipos={equipos}
                     rol={rol}
                     onCerrar={() => setSeleccion(null)}
-                    onCambio={cargarDisponibilidad}
+                    onCambio={() => {
+                        cargarDisponibilidad();
+                        setVersionHistorial((v) => v + 1);
+                    }}
                 />
             )}
         </MainLayout>
