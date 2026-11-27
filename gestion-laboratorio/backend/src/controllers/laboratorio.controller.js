@@ -23,7 +23,7 @@ async function obtenerLaboratorioPorId(req, res) {
         const laboratorio = await laboratorioService.obtenerLaboratorioPorId(id);
         return res.status(200).json(laboratorio);
     } catch(err){
-        return manejarError(res, err)
+        return manejarError(res, err);
     }
 }
 
