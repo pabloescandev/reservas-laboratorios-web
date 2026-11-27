@@ -1,0 +1,207 @@
+/* ===== BASE: CELULAR PRIMERO (Mobile-First) ===== */
+.contenedor-gestion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.tarjeta-formulario,
+.tarjeta-tabla {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.titulo-formulario {
+  margin: 0 0 4px 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #0f172a;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* En celular, las filas dobles y el buscador se apilan verticalmente */
+.fila-doble,
+.fila-busqueda {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-ancho,
+.campo-rol {
+  width: 100%;
+}
+
+.etiqueta {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.caja-texto,
+.lista-opciones {
+  width: 100%;
+  height: 42px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.caja-texto:focus,
+.lista-opciones:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+/* Botones táctiles cómodos en celular */
+.boton-crear,
+.boton-accion {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+  background-color: #0891b2;
+  border: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boton-crear:hover,
+.boton-accion:hover {
+  background-color: #0e7490;
+}
+
+.boton-crear:active,
+.boton-accion:active {
+  transform: scale(0.99);
+}
+
+/* Botón secundario (Buscar usuario) */
+.fila-busqueda .boton-accion {
+  background-color: #ecfeff;
+  border: 1px solid #06b6d4;
+  color: #0e7490;
+}
+
+.fila-busqueda .boton-accion:hover {
+  background-color: #cffafe;
+}
+
+/* Tabla con scroll horizontal suave en celular */
+.tarjeta-tabla {
+  overflow-x: auto;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tabla-usuarios thead {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabla-usuarios th {
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.tabla-usuarios td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+}
+
+.tabla-usuarios tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* ===== TABLET (>= 640px) ===== */
+@media (min-width: 640px) {
+  .tarjeta-formulario,
+  .tarjeta-tabla {
+    padding: 24px 28px;
+  }
+
+  .fila-doble {
+    flex-direction: row;
+  }
+
+  .campo-ancho {
+    flex: 1;
+  }
+
+  .campo-rol {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  .fila-busqueda {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .fila-busqueda .boton-accion {
+    width: auto;
+    height: 42px;
+    margin-top: 0;
+    white-space: nowrap;
+  }
+
+  .boton-derecha {
+    width: auto;
+    align-self: flex-end;
+  }
+}
+
+/* ===== COMPUTADORA DE ESCRITORIO (>= 1100px) ===== */
+@media (min-width: 1100px) {
+  /* Pone los dos formularios lado a lado y la tabla abajo ocupando todo el ancho */
+  .contenedor-gestion {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .tarjeta-tabla {
+    grid-column: 1 / -1;
+    order: 3;
+  }
+}
