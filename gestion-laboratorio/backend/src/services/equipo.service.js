@@ -1,4 +1,4 @@
-const equiposRepository = require("../repositories/equipos.repository");
+const equiposRepository = require("../repositories/equipo.repository");
 
 function crearError(message, status = 400) {
     const err = new Error(message);

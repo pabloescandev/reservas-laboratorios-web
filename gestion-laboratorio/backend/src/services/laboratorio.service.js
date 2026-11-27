@@ -1,5 +1,3 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 const laboratorioRepository = require("../repositories/laboratorio.repository");
 
 function crearError(message, status = 400) {

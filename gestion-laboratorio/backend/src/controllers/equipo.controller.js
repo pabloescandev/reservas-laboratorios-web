@@ -1,4 +1,4 @@
-const equiposService = require("../services/equipos.service");
+const equiposService = require("../services/equipo.service");
 
 function manejarError(res, err){
     if (err && err.status){

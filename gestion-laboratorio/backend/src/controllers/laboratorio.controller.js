@@ -10,8 +10,8 @@ function manejarError(res, err){
 
 async function listarLaboratorios(req, res) {
     try{
-        const laboratorio = await laboratorioService.listarLaboratorios();
-        return res.status(200).json(laboratorio);
+        const laboratorios = await laboratorioService.listarLaboratorios();
+        return res.status(200).json(laboratorios);
     } catch (err){
         return manejarError(res, err);
     }
