@@ -166,7 +166,42 @@ async function finalizarVencidas(ahora) {
     return { finalizadas: finalizadas.changes, rechazadas: rechazadas.changes };
 }
 
+async function findHorariosDeLaboratorio(labId) {
+    const sql = `
+        SELECT hor_id, hor_dia_semana, hor_entrada, hor_salida
+        FROM LAB_HORARIOS
+        WHERE lab_id = ?
+        ORDER BY hor_dia_semana, hor_entrada
+    `;
+    return await all(sql, [labId]);
+}
+
+async function findBloqueosEnRango(labId, desde, hasta) {
+    const sql = `
+        SELECT blo_id, blo_tipo, blo_motivo, blo_fecha_inicio, blo_fecha_fin,
+               blo_dia_semana, blo_hora_inicio, blo_hora_fin, lab_id
+        FROM LAB_BLOQUEOS
+        WHERE (lab_id = ? OR lab_id IS NULL)
+          AND blo_fecha_inicio <= ?
+          AND blo_fecha_fin >= ?
+    `;
+    return await all(sql, [labId, hasta, desde]);
+}
+
+async function findReservasDeLaboratorioEnRango(labId, desde, hasta) {
+    const sql = `${SELECT_DETALLE}
+        WHERE l.lab_id = ?
+          AND r.res_fecha BETWEEN ? AND ?
+          AND r.res_estado IN ('P', 'A', 'F')
+        ORDER BY r.res_fecha, h.hor_entrada
+    `;
+    return await all(sql, [labId, desde, hasta]);
+}
+
 module.exports = {
+    findHorariosDeLaboratorio,
+    findBloqueosEnRango,
+    findReservasDeLaboratorioEnRango,
     findHorarioConLaboratorio,
     findBloqueosQueCubren,
     sumAforoEstudiantes,

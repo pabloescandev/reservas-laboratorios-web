@@ -12,6 +12,19 @@ function aNumero(valor) {
     return valor === undefined || valor === null || valor === "" ? undefined : Number(valor);
 }
 
+async function obtenerDisponibilidadSemanal(req, res) {
+    try {
+        const { labId, semana } = req.query;
+        const disponibilidad = await reservaService.obtenerDisponibilidadSemanal(req.user, {
+            labId: aNumero(labId),
+            semana,
+        });
+        return res.status(200).json(disponibilidad);
+    } catch (err) {
+        return manejarError(res, err);
+    }
+}
+
 async function solicitarLaboratorio(req, res) {
     try {
         const { horId, fecha, asignatura, motivo } = req.body || {};
@@ -87,6 +100,7 @@ async function cancelarReserva(req, res) {
 }
 
 module.exports = {
+    obtenerDisponibilidadSemanal,
     solicitarLaboratorio,
     reservarPuesto,
     listarReservas,

@@ -3,6 +3,7 @@ const reservaController = require("../controllers/reserva.controller");
 const { verificarToken, autorizarRoles } = require("../middlewares/auth.middleware");
 const router = express.Router();
 
+router.get("/reservas/disponibilidad", verificarToken, reservaController.obtenerDisponibilidadSemanal);
 router.get("/reservas", verificarToken, reservaController.listarReservas);
 router.get("/reservas/:id", verificarToken, reservaController.obtenerReserva);
 

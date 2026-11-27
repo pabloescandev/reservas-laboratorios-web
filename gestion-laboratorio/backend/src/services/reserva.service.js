@@ -1,4 +1,5 @@
 const reservaRepository = require("../repositories/reserva.repository");
+const laboratorioRepository = require("../repositories/laboratorio.repository");
 
 const ROL_ADMIN = "A";
 const ROL_DOCENTE = "D";
@@ -252,7 +253,140 @@ async function cancelarReserva(usuario, resId) {
     return await reservaRepository.findById(resId);
 }
 
+function sumarDias(fecha, dias) {
+    const [anio, mes, dia] = fecha.split("-").map(Number);
+    const resultado = new Date(anio, mes - 1, dia + dias);
+    return `${resultado.getFullYear()}-${dosDigitos(resultado.getMonth() + 1)}-${dosDigitos(resultado.getDate())}`;
+}
+
+function bloqueoCubre(bloqueo, fecha, diaSemana, entrada, salida) {
+    if (fecha < bloqueo.blo_fecha_inicio || fecha > bloqueo.blo_fecha_fin) return false;
+    if (bloqueo.blo_dia_semana !== null && bloqueo.blo_dia_semana !== diaSemana) return false;
+    if (bloqueo.blo_hora_inicio === null) return true;
+    return bloqueo.blo_hora_inicio < salida && bloqueo.blo_hora_fin > entrada;
+}
+
+function resumirReserva(reserva) {
+    return {
+        res_id: reserva.res_id,
+        res_tipo: reserva.res_tipo,
+        res_estado: reserva.res_estado,
+        res_aforo: reserva.res_aforo,
+        res_asignatura: reserva.res_asignatura,
+        res_motivo: reserva.res_motivo,
+        usu_id: reserva.usu_id,
+        usu_nombres: reserva.usu_nombres,
+        usu_apellidos: reserva.usu_apellidos,
+        equ_id: reserva.equ_id,
+        equ_codigo: reserva.equ_codigo,
+    };
+}
+
+async function obtenerDisponibilidadSemanal(usuario, { labId, semana }) {
+    if (!labId) {
+        throw crearError("El laboratorio es obligatorio", 400);
+    }
+    const fechaBase = semana || ahoraTexto().slice(0, 10);
+    if (!esFechaValida(fechaBase)) {
+        throw crearError("Fecha inválida. Use el formato YYYY-MM-DD", 400);
+    }
+
+    const laboratorio = await laboratorioRepository.findById(labId);
+    if (!laboratorio) {
+        throw crearError("El laboratorio no existe", 404);
+    }
+
+    await finalizarVencidas();
+
+    const inicio = sumarDias(fechaBase, 1 - diaSemanaIso(fechaBase));
+    const fin = sumarDias(inicio, 6);
+
+    const horarios = await reservaRepository.findHorariosDeLaboratorio(labId);
+    const bloqueos = await reservaRepository.findBloqueosEnRango(labId, inicio, fin);
+    const reservas = await reservaRepository.findReservasDeLaboratorioEnRango(labId, inicio, fin);
+
+    const diasConHorario = [...new Set(horarios.map((h) => h.hor_dia_semana))];
+
+    const dias = diasConHorario.map((diaSemana) => {
+        const fecha = sumarDias(inicio, diaSemana - 1);
+
+        const franjas = horarios
+            .filter((h) => h.hor_dia_semana === diaSemana)
+            .map((horario) => {
+                const reservasFranja = reservas.filter(
+                    (r) => r.hor_id === horario.hor_id && r.res_fecha === fecha
+                );
+                const activas = reservasFranja.filter((r) => ["P", "A"].includes(r.res_estado));
+
+                const ocupados = activas
+                    .filter((r) => r.res_tipo !== "L")
+                    .reduce((total, r) => total + r.res_aforo, 0);
+                const laboratorioAprobado = activas.some((r) => r.res_tipo === "L" && r.res_estado === "A");
+                const solicitudesPendientes = activas.filter((r) => r.res_tipo === "L" && r.res_estado === "P").length;
+
+                let bloqueo = null;
+                if (laboratorio.lab_estado === "M") {
+                    bloqueo = { tipo: "M", motivo: "Laboratorio en mantenimiento" };
+                } else {
+                    const encontrado = bloqueos.find((b) =>
+                        bloqueoCubre(b, fecha, diaSemana, horario.hor_entrada, horario.hor_salida)
+                    );
+                    if (encontrado) {
+                        bloqueo = { tipo: encontrado.blo_tipo, motivo: encontrado.blo_motivo };
+                    }
+                }
+
+                let estado = "libre";
+                if (bloqueo) {
+                    estado = "bloqueada";
+                } else if (laboratorioAprobado || ocupados >= laboratorio.lab_aforo) {
+                    estado = "reservada";
+                }
+
+                const miReserva = reservasFranja.find((r) => r.usu_id === usuario.sub);
+
+                return {
+                    hor_id: horario.hor_id,
+                    entrada: horario.hor_entrada,
+                    salida: horario.hor_salida,
+                    estado,
+                    pasada: yaEmpezo(fecha, horario.hor_entrada),
+                    bloqueo,
+                    laboratorioAprobado,
+                    solicitudesPendientes,
+                    cupos: {
+                        total: laboratorio.lab_aforo,
+                        ocupados,
+                        disponibles: Math.max(laboratorio.lab_aforo - ocupados, 0),
+                    },
+                    equiposReservados: activas.filter((r) => r.equ_id).map((r) => r.equ_id),
+                    miReserva: miReserva ? resumirReserva(miReserva) : null,
+                    reservas: usuario.rol === ROL_ADMIN ? reservasFranja.map(resumirReserva) : undefined,
+                };
+            });
+
+        return { fecha, diaSemana, franjas };
+    });
+
+    return {
+        laboratorio: {
+            lab_id: laboratorio.lab_id,
+            lab_nombre: laboratorio.lab_nombre,
+            lab_aforo: laboratorio.lab_aforo,
+            lab_estado: laboratorio.lab_estado,
+        },
+        semana: {
+            inicio,
+            fin,
+            anterior: sumarDias(inicio, -7),
+            siguiente: sumarDias(inicio, 7),
+        },
+        dias,
+    };
+}
+
 module.exports = {
+    obtenerDisponibilidadSemanal,
     solicitarLaboratorio,
     reservarPuesto,
     listarReservas,
