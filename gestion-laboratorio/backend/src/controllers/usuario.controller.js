@@ -17,6 +17,7 @@ async function login(req, res) {
         return manejarError(res, err);
     }
 }
+
 async function crearUsuario(req, res) {
     try {
         const {correo, password, contrasenia, rol, nombres, apellidos} = req.body || {};
