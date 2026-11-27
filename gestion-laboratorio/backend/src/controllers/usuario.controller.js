@@ -39,14 +39,14 @@ async function obtenerUsuarioPorId(req, res) {
         const usuario = await usuariosService.obtenerUsuarioPorId(id);
         return res.status(200).json(usuario);
     } catch(err){
-        return manejarError(res, ett)
+        return manejarError(res, err)
     }
 }
 
 async function listarUsuarios(req, res) {
     try{
         const usuarios = await usuariosService.listarUsuarios();
-        return res.status(200).json(usuario);
+        return res.status(200).json(usuarios);
     } catch (err){
         return manejarError(res, err);
     }

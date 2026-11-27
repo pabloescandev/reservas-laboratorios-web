@@ -2,14 +2,14 @@ const jwt = require("jsonwebtoken");
 
 function verificarToken(req, res, next){
     const authHeader = req.headers["authorization"] || "";
-    const [esquema, token] = authHeader.split("");
+    const [esquema, token] = authHeader.split(" ");
 
     if (esquema !== "Bearer" || !token) {
         return res.status(401).json({ error: "Token de autenticación requerido"});
     }
 
     try{
-        const pauload = jwt.verify(token, process.env.JWT_SECRET);
+        const payload = jwt.verify(token, process.env.JWT_SECRET);
         req.user = payload;
         return next();
     } catch (err){
@@ -19,7 +19,7 @@ function verificarToken(req, res, next){
 
 function autorizarRoles(...rolesPermitidos){
     return (req, res, next) => {
-        if(!req.user || !req.user.rol){
+        if(!rolesPermitidos.includes(req.user.rol)){
             return res.status(401).json({ error : "Accesso denegado: rol sin permisos"});
         }
 

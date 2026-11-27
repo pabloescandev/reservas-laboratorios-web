@@ -9,4 +9,4 @@ router.get("/usuarios", verificarToken, autorizarRoles('A'), usuarioController.l
 router.get("/usuarios/:id", verificarToken, autorizarRoles('A'), usuarioController.obtenerUsuarioPorId);
 router.post("/usuarios", verificarToken, autorizarRoles('A'), usuarioController.crearUsuario);
 
-module.exports = router;
+module.exports = router;    
