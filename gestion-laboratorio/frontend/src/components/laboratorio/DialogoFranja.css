@@ -1,0 +1,269 @@
+.fondo-dialogo {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 50;
+}
+
+.dialogo-franja {
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 16px 16px 0 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.cabecera-dialogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.titulo-dialogo {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitulo-dialogo {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.boton-cerrar {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #334155;
+}
+
+.aviso-dialogo {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  font-size: 14px;
+  color: #334155;
+}
+
+.aviso-bloqueo {
+  background-color: #e2e8f0;
+  font-weight: 600;
+}
+
+.mi-reserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #a5f3fc;
+  border-radius: 10px;
+  background-color: #ecfeff;
+  font-size: 14px;
+}
+
+.mi-reserva p {
+  margin: 0;
+}
+
+.formulario-dialogo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.grupo-opciones {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 15px;
+}
+
+.grupo-opciones legend {
+  margin-bottom: 8px;
+}
+
+.grupo-opciones label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.dialogo-franja .grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dialogo-franja .etiqueta-campo {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.dialogo-franja .entrada-dato,
+.dialogo-franja .selector-dato {
+  width: 100%;
+  min-height: 42px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+}
+
+.dialogo-franja .area-texto {
+  min-height: 84px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.dialogo-franja .entrada-dato:focus,
+.dialogo-franja .selector-dato:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+.texto-ayuda {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.boton-principal,
+.boton-secundario {
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-principal {
+  border: none;
+  background-color: #0891b2;
+  color: #ffffff;
+}
+
+.boton-principal:hover {
+  background-color: #0e7490;
+}
+
+.boton-secundario {
+  border: 1px solid #fca5a5;
+  background-color: #ffffff;
+  color: #b91c1c;
+}
+
+.boton-principal:disabled,
+.boton-secundario:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.subtitulo-dialogo-seccion {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.lista-reservas-franja ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-reserva-franja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.estado-reserva {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.estado-reserva-P {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.estado-reserva-A {
+  background-color: #dcfce7;
+  color: #14532d;
+}
+
+.estado-reserva-F {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.mensaje-dialogo {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mensaje-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.mensaje-exito {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+@media (min-width: 640px) {
+  .fondo-dialogo {
+    align-items: center;
+    padding: 16px;
+  }
+
+  .dialogo-franja {
+    max-width: 480px;
+    border-radius: 16px;
+  }
+}

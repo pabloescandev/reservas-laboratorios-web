@@ -1,0 +1,187 @@
+.panel-laboratorio {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.foto-laboratorio {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.foto-vacia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.bloque-panel {
+  padding: 16px;
+  border-bottom: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bloque-panel:last-child {
+  border-bottom: none;
+}
+
+.nombre-laboratorio {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.estado-laboratorio {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.estado-laboratorio.disponible {
+  background-color: #dcfce7;
+  color: #14532d;
+}
+
+.estado-laboratorio.en-mantenimiento {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.datos-laboratorio {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 14px;
+}
+
+.datos-laboratorio dt {
+  color: #64748b;
+}
+
+.datos-laboratorio dd {
+  margin: 0;
+}
+
+.subtitulo-panel {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.texto-secundario {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.lista-software {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lista-software li {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #ecfeff;
+  border: 1px solid #a5f3fc;
+  color: #155e75;
+  font-size: 13px;
+}
+
+.lista-equipos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.codigo-equipo {
+  display: block;
+  font-weight: 600;
+}
+
+.tipo-equipo {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.acciones-equipo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.estado-equipo {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.equipo-operativo {
+  background-color: #dcfce7;
+  color: #14532d;
+}
+
+.equipo-danado {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+}
+
+.equipo-reparacion {
+  background-color: #fef3c7;
+  color: #78350f;
+}
+
+.boton-reportar {
+  min-height: 32px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.boton-reportar:hover {
+  background-color: #fef2f2;
+}
