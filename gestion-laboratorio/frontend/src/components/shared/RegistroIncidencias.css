@@ -1,0 +1,204 @@
+/* ===== BASE: CELULAR PRIMERO (Mobile-First) ===== */
+.contenedor-incidencias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.tarjeta-incidencia,
+.tarjeta-tabla-incidencias {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.titulo-incidencia {
+  margin: 0 0 4px 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #0f172a;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.fila-doble-incidencia {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo-incidencia {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.etiqueta-incidencia {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.selector-incidencia,
+.area-descripcion {
+  width: 100%;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.selector-incidencia {
+  height: 42px;
+}
+
+.area-descripcion {
+  padding: 10px 12px;
+  resize: vertical;
+  min-height: 90px;
+}
+
+.selector-incidencia:focus,
+.area-descripcion:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+.boton-reportar {
+  width: 100%;
+  height: 44px;
+  margin-top: 4px;
+  background-color: #0891b2;
+  border: none;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boton-reportar:hover {
+  background-color: #0e7490;
+}
+
+.boton-reportar:active {
+  transform: scale(0.99);
+}
+
+/* Tabla de incidencias reportadas */
+.tarjeta-tabla-incidencias {
+  overflow-x: auto;
+}
+
+.tabla-incidencias {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+.tabla-incidencias thead {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabla-incidencias th {
+  padding: 12px 14px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.tabla-incidencias td {
+  padding: 14px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+}
+
+.tabla-incidencias tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.codigo-equipo-tag {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #334155;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Badges de prioridad y estado */
+.badge-incidencia {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.prioridad-alta {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.prioridad-media {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.prioridad-baja {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.estado-atendida {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.estado-pendiente-inc {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+/* ===== TABLET Y COMPUTADORA (>= 768px) ===== */
+@media (min-width: 768px) {
+  .tarjeta-incidencia,
+  .tarjeta-tabla-incidencias {
+    padding: 24px 28px;
+  }
+
+  .fila-doble-incidencia {
+    flex-direction: row;
+  }
+
+  .boton-reportar {
+    width: auto;
+    align-self: flex-end;
+  }
+}

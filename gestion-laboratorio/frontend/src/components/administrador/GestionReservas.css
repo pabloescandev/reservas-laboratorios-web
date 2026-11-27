@@ -1,0 +1,252 @@
+/* ===== BASE: CELULAR PRIMERO (Mobile-First) ===== */
+.contenedor-gestion-reservas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+}
+
+.tarjeta-encabezado-reservas {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.titulo-gestion-reservas {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.filtros-reservas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.boton-filtro {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.boton-filtro.activo {
+  background-color: #0891b2;
+  border-color: #0891b2;
+  color: #ffffff;
+}
+
+/* Lista de solicitudes */
+.lista-solicitudes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Tarjeta individual de cada solicitud (Subcomponente) */
+.tarjeta-item-reserva {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.info-solicitud {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.cabecera-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.id-y-lab {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.metadatos-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.motivo-texto {
+  margin: 4px 0 0 0;
+  padding: 10px 12px;
+  background-color: #f8fafc;
+  border-left: 3px solid #0891b2;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+/* Badges de estado */
+.badge-reserva-admin {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.estado-pendiente {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+.estado-aprobado {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.estado-denegado {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Zona derecha: mensaje de respuesta y botones */
+.acciones-solicitud {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.campo-respuesta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.etiqueta-respuesta {
+  font-size: 13px;
+  font-weight: 500;
+  color: #334155;
+}
+
+.entrada-respuesta {
+  width: 100%;
+  height: 40px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.entrada-respuesta:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+}
+
+.grupo-botones-decision {
+  display: flex;
+  gap: 10px;
+}
+
+.boton-aprobar,
+.boton-denegar {
+  flex: 1;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boton-aprobar {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.boton-aprobar:hover {
+  background-color: #15803d;
+}
+
+.boton-denegar {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.boton-denegar:hover {
+  background-color: #b91c1c;
+}
+
+.boton-aprobar:active,
+.boton-denegar:active {
+  transform: scale(0.99);
+}
+
+.respuesta-registrada {
+  font-size: 13px;
+  color: #334155;
+  background-color: #f1f5f9;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+/* ===== TABLET Y COMPUTADORA (>= 768px) ===== */
+@media (min-width: 768px) {
+  .tarjeta-encabezado-reservas {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+  }
+
+  .tarjeta-item-reserva {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 28px;
+  }
+
+  .acciones-solicitud {
+    width: 340px;
+    flex-shrink: 0;
+    padding-top: 0;
+    padding-left: 24px;
+    border-top: none;
+    border-left: 1px solid #f1f5f9;
+  }
+}
