@@ -169,6 +169,57 @@
   color: #991b1b;
 }
 
+.estado-cancelada {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.estado-finalizada {
+  background-color: #e0f2fe;
+  color: #075985;
+}
+
+.ayuda-reserva {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.mensaje-reserva {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mensaje-reserva-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.mensaje-reserva-exito {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
+.boton-cancelar-solicitud {
+  min-height: 32px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b91c1c;
+  cursor: pointer;
+}
+
+.boton-cancelar-solicitud:hover {
+  background-color: #fef2f2;
+}
+
 /* ===== TABLET Y COMPUTADORA (>= 768px) ===== */
 @media (min-width: 768px) {
   .tarjeta-solicitud,

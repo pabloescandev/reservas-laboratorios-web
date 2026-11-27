@@ -224,6 +224,24 @@
   border-radius: 8px;
 }
 
+.mensaje-gestion {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mensaje-gestion-error {
+  background-color: #fef2f2;
+  color: #b91c1c;
+}
+
+.mensaje-gestion-exito {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
+
 /* ===== TABLET Y COMPUTADORA (>= 768px) ===== */
 @media (min-width: 768px) {
   .tarjeta-encabezado-reservas {

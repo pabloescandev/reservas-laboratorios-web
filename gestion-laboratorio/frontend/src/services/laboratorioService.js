@@ -7,3 +7,7 @@ export function obtenerLaboratorio(labId) {
 export function listarEquiposDeLaboratorio(labId) {
   return apiRequest(`/equipos?labId=${labId}`);
 }
+
+export function listarLaboratorios() {
+  return apiRequest("/laboratorios");
+}

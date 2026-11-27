@@ -1,19 +1,21 @@
+const CLASES_ESTADO = {
+    A: 'badge-reserva-admin estado-aprobado',
+    R: 'badge-reserva-admin estado-denegado',
+    P: 'badge-reserva-admin estado-pendiente',
+};
+
 export function SolicitudReservaItem({ solicitud, onResponder }) {
     function handleSubmit(e) {
         e.preventDefault();
         const datos = new FormData(e.target);
         const mensajeRespuesta = datos.get('mensajeRespuesta');
-        // Detecta qué botón fue presionado ("Aprobado" o "Denegado")
-        const nuevoEstado = e.nativeEvent.submitter.value;
+        // Detecta qué botón fue presionado: "A" (aprobar) o "R" (rechazar)
+        const decision = e.nativeEvent.submitter.value;
 
-        onResponder(solicitud.id, nuevoEstado, mensajeRespuesta);
+        onResponder(solicitud.id, decision, mensajeRespuesta);
     }
 
-    function obtenerClaseEstado(estado) {
-        if (estado === 'Aprobado') return 'badge-reserva-admin estado-aprobado';
-        if (estado === 'Denegado') return 'badge-reserva-admin estado-denegado';
-        return 'badge-reserva-admin estado-pendiente';
-    }
+    const pendiente = solicitud.codigoEstado === 'P';
 
     return (
         <article className="tarjeta-item-reserva">
@@ -23,7 +25,7 @@ export function SolicitudReservaItem({ solicitud, onResponder }) {
                     <span className="id-y-lab">
                         #{solicitud.id} — {solicitud.laboratorio}
                     </span>
-                    <span className={obtenerClaseEstado(solicitud.estado)}>
+                    <span className={CLASES_ESTADO[solicitud.codigoEstado] || 'badge-reserva-admin'}>
                         {solicitud.estado}
                     </span>
                 </div>
@@ -33,7 +35,10 @@ export function SolicitudReservaItem({ solicitud, onResponder }) {
                         <strong>Solicitante:</strong> {solicitud.solicitante}
                     </span>
                     <span>
-                        <strong>Fecha:</strong> {solicitud.fecha}
+                        <strong>Fecha:</strong> {solicitud.fecha} · {solicitud.franja}
+                    </span>
+                    <span>
+                        <strong>Asignatura:</strong> {solicitud.asignatura}
                     </span>
                 </div>
 
@@ -43,46 +48,39 @@ export function SolicitudReservaItem({ solicitud, onResponder }) {
             </div>
 
             {/* Derecha: Campo de mensaje y botones de decisión */}
-            <form className="acciones-solicitud" onSubmit={handleSubmit}>
-                <div className="campo-respuesta">
-                    <label
-                        className="etiqueta-respuesta"
-                        htmlFor={`respuesta-${solicitud.id}`}
-                    >
-                        Mensaje de respuesta:
-                    </label>
-                    <input
-                        id={`respuesta-${solicitud.id}`}
-                        name="mensajeRespuesta"
-                        type="text"
-                        className="entrada-respuesta"
-                        minLength={3}
-                        required
-                        defaultValue={solicitud.mensajeRespuesta || ''}
-                        placeholder="Mínimo 3 caracteres..."
-                    />
-                </div>
+            {pendiente ? (
+                <form className="acciones-solicitud" onSubmit={handleSubmit}>
+                    <div className="campo-respuesta">
+                        <label className="etiqueta-respuesta" htmlFor={`respuesta-${solicitud.id}`}>
+                            Mensaje de respuesta:
+                        </label>
+                        <input
+                            id={`respuesta-${solicitud.id}`}
+                            name="mensajeRespuesta"
+                            type="text"
+                            className="entrada-respuesta"
+                            minLength={3}
+                            maxLength={300}
+                            required
+                            placeholder="Mínimo 3 caracteres..."
+                        />
+                    </div>
 
-                <div className="grupo-botones-decision">
-                    <button
-                        type="submit"
-                        name="estado"
-                        value="Aprobado"
-                        className="boton-aprobar"
-                    >
-                        Aprobar
-                    </button>
+                    <div className="grupo-botones-decision">
+                        <button type="submit" value="A" className="boton-aprobar">
+                            Aprobar
+                        </button>
 
-                    <button
-                        type="submit"
-                        name="estado"
-                        value="Denegado"
-                        className="boton-denegar"
-                    >
-                        Denegar
-                    </button>
-                </div>
-            </form>
+                        <button type="submit" value="R" className="boton-denegar">
+                            Denegar
+                        </button>
+                    </div>
+                </form>
+            ) : (
+                <p className="respuesta-registrada">
+                    <strong>Respuesta:</strong> {solicitud.mensajeRespuesta || 'Sin mensaje'}
+                </p>
+            )}
         </article>
     );
 }
