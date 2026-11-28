@@ -27,7 +27,36 @@ async function obtenerLaboratorioPorId(req, res) {
     }
 }
 
+async function obtenerLaboratorioPorNombre(req, res) {
+    try{
+        const {nombre} = req.params;
+        const laboratorio = await laboratorioService.obtenerLaboratorioPorNombre(nombre);
+        return res.status(200).json(laboratorio);
+    } catch(err){
+        return manejarError(res, err);
+    }
+}
+
+async function crearLaboratorio(req, res) {
+    try {
+        const body = req.body || {};
+        const laboratorio = await laboratorioService.crearLaboratorio({
+            nombre: body.nombre ?? body.lab_nombre,
+            ubicacion: body.ubicacion ?? body.lab_ubicacion,
+            aforo: body.aforo ?? body.lab_aforo,
+            softwareInstalado: body.softwareInstalado ?? body.lab_software_instalado,
+            fotoUrl: body.fotoUrl ?? body.lab_foto_url,
+            estado: body.estado ?? body.lab_estado ?? "D",
+        });
+        return res.status(201).json(laboratorio);
+    } catch (err) {
+        return manejarError(res, err);
+    }
+}
+
 module.exports = {
     listarLaboratorios,
     obtenerLaboratorioPorId,
+    obtenerLaboratorioPorNombre,
+    crearLaboratorio,
 }
