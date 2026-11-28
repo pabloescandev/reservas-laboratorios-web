@@ -4,7 +4,7 @@ function manejarError(res, err){
     if (err && err.status){
         return res.status(err.status).json({ error : err.message});
     }
-    console.error("Error inseperado en horario.controller: ", err);
+    console.error("Error inesperado en horario.controller: ", err);
     return res.status(500).json({error: "Error interno del servidor"});
 }
 
